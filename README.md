@@ -1,9 +1,9 @@
 # Hackathon-CSMIT-X-ACT-Team-Armours-
 
 ## Team Members: 
-## 1. Athik Mohamed M
-## 2. Sankar P V
-## 3. Krishnan
+### 1. Athik Mohamed M
+### 2. Sankar P V
+### 3. Krishnan
 
 ## Displaying Location in Maps
 
