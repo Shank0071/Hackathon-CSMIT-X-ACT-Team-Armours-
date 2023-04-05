@@ -2,5 +2,6 @@
 
 ## Displaying Location in Maps
 
-### The live coordinates of the user is being fetched from Realtime Database
+#### The live coordinates of the user is being fetched from Realtime Database
+#### The coordinates are then exhibited in the maps
 
