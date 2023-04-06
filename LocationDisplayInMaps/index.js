@@ -1,3 +1,22 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA9GYU4gXQ4Zyxj-idTbvNwgtyvTh2ESpo",
+  authDomain: "latlonmap.firebaseapp.com",
+  projectId: "latlonmap",
+  storageBucket: "latlonmap.appspot.com",
+  messagingSenderId: "556268563116",
+  appId: "1:556268563116:web:ab02edc3e5af98aceb8d09",
+  measurementId: "G-MJ64CG4YNK",
+};
+
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+
+function randomNumber(min, max) {
+  return (Math.random() * (max - min) + min).toFixed(4)
+}
+
+
 // Create a Leaflet map object
 const map = L.map("mapid");
 
