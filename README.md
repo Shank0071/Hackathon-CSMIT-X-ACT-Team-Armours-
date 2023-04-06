@@ -3,7 +3,7 @@
 ## Team Members: 
 ### 1. Athik Mohamed M
 ### 2. Sankar P V
-### 3. Krishnan
+### 3. Krishnan P
 
 ## Displaying Location in Maps
 
