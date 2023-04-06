@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
-
+ 
 String id = "sensor 1";
 
 int prevstate = LOW;

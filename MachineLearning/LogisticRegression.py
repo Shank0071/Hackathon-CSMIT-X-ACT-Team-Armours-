@@ -28,3 +28,6 @@ clf = LogisticRegression(random_state=42).fit(X_train_norm.reshape(-1, 1), y_tra
 # Evaluate the model on the testing set
 y_pred = clf.predict(X_test_norm.reshape(-1, 1))
 
+accuracy = accuracy_score(y_test, y_pred)
+print("accuracy", accuracy)
+
