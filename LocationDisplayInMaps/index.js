@@ -74,3 +74,47 @@ setInterval(() => {
     console.log("latlon: ", lat, lon);
   });
 }, 2000);
+
+
+const ref2 = database.ref("USER/user1")
+
+setInterval(() => {
+  ref2.once("value", function (snapshot) {
+    const data = snapshot.val();
+    console.log(data);
+    const lat = Number(data.lat) / 1000;
+    const lon = Number(data.long) / 1000;
+    const healthStats = data.status;
+    console.log(lat, lon);
+    const marker = L.marker([lat, lon]).addTo(map);
+    marker.bindPopup(
+      `name: ${data.name}<br>age: ${data.age} <br> lat: ${lat} <br>lon:  ${lon} <br>status: ${healthStats}`
+    );
+    setTimeout(() => {
+      marker.remove();
+    }, 2000);
+    console.log("latlon: ", lat, lon);
+  });
+}, 2000)
+
+const ref3 = database.ref("USER/user2")
+
+setInterval(() => {
+  ref3.once("value", function (snapshot) {
+    const data = snapshot.val();
+    console.log(data);
+    const lat = Number(data.lat) / 1000;
+    const lon = Number(data.long) / 1000;
+    const healthStats = data.status;
+    console.log(lat, lon);
+    const marker = L.marker([lat, lon]).addTo(map);
+    marker.bindPopup(
+      `name: ${data.name}<br>age: ${data.age} <br> lat: ${lat} <br>lon:  ${lon} <br>status: ${healthStats}`
+    );
+    setTimeout(() => {
+      marker.remove();
+    }, 2000);
+    console.log("latlon: ", lat, lon);
+  });
+}, 2000)
+
