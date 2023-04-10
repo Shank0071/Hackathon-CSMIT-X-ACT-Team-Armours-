@@ -9,4 +9,5 @@
 
 #### The live coordinates of the user is being fetched from Realtime Database
 #### The coordinates are then exhibited in the maps
+#### Firebase is used for realtime database
 
